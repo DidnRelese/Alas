@@ -1,0 +1,4 @@
+{
+  "extends": "react-app",
+  "plugins": ["lodash-fp", "react-hooks", "prettier"]
+}
