@@ -3,7 +3,9 @@ package com.alasdoo.developercourseassignment.controller;
 import com.alasdoo.developercourseassignment.dto.TeacherDTO;
 import com.alasdoo.developercourseassignment.service.impl.TeacherServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/teacher")
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "*")
 public class TeacherController {
 
     @Autowired

@@ -18,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/developercourse")
-@CrossOrigin
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class DeveloperCourseController {
 
     @Autowired
